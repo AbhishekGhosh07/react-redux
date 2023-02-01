@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import User from './User';
+import HomeContainer from './containers/HomeContainer';
 
 function App(){
   
 return(<>
   <div className="App">
-    <h1>App Component</h1>
-    <User data={{name:'Anil',age:23}}/>
+  <HomeContainer/>
   </div>
 </>)
 }
