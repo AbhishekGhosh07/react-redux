@@ -2,10 +2,7 @@ import React from 'react'
 function Home(props){
    console.log("Home",props.data);
     return(<>
-    <div>
-            <h5>{props.data.length}</h5>
-        </div>
-    <center>
+        <center>
         <div><h1>Home Component</h1>
         
         <div className="cart-wrapper">
