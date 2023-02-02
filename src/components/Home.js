@@ -1,9 +1,9 @@
 import React from 'react'
 function Home(props){
-   console.log("Home",props);
+   console.log("Home",props.data);
     return(<>
     <div>
-            <h5></h5>
+            <h5>{props.data.length}</h5>
         </div>
     <center>
         <div><h1>Home Component</h1>
