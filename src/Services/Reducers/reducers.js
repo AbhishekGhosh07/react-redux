@@ -1,4 +1,4 @@
-export const ADD_TO_CART = "ADD_TO_CART"
+import {ADD_TO_CART,REMOVE_TO_CART} from '../constants'
 const initialState = {
     cardData: []
 }
@@ -10,6 +10,12 @@ export default function cardItems(state=[], action) {
                 ...state,
                 {cardData: action.data}
             ]
+
+        case REMOVE_TO_CART:
+            state.pop();
+            return[
+                ...state,
+            ]    
             
         default:
             return state
