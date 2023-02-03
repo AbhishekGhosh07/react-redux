@@ -2,7 +2,9 @@ import {connect} from 'react-redux'
 import Header from '../components/Header'
 
 const mapStateToProps=state=>({
-    data:state.cardItems
+    cart:state.cardItems,
+    order:state.orderDetails
+    
 })
 
 const mapDispatchToProps=dispatch=>({
